@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "go-Movie-crud",
+    "dateExported": "2023-12-19T16:36:28.178Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ee98f058-58cc-4879-84f2-54404879e9da",
+            "colId": "664cf499-52da-42b4-931e-a11f508388a3",
+            "containerId": "",
+            "name": "Get all movies",
+            "url": "localhost:8000/movies",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-19T16:28:16.627Z",
+            "modified": "2023-12-19T16:28:41.504Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4c8f4551-3248-4379-95f3-3afd0f70dda6",
+            "colId": "664cf499-52da-42b4-931e-a11f508388a3",
+            "containerId": "",
+            "name": "Get movie by id",
+            "url": "localhost:8000/movies/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-19T16:28:52.810Z",
+            "modified": "2023-12-19T16:29:03.679Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f5c9c6b4-13c0-4eb5-b297-bacdb79d86bc",
+            "colId": "664cf499-52da-42b4-931e-a11f508388a3",
+            "containerId": "",
+            "name": "Create movie",
+            "url": "localhost:8000/movies",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-19T16:29:12.107Z",
+            "modified": "2023-12-19T16:31:41.996Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"isbn\":\"234324\",\n  \"title\":\"Movie seven\",\n  \"director\":{\n    \"firstname\":\"Ash\",\n    \"lastname\":\"Singh\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6842168e-b8b7-480e-a840-bda402acdf28",
+            "colId": "664cf499-52da-42b4-931e-a11f508388a3",
+            "containerId": "",
+            "name": "Update movie",
+            "url": "localhost:8000/movies/8482411",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-12-19T16:32:44.066Z",
+            "modified": "2023-12-19T16:33:51.221Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"isbn\":\"234324\",\n  \"title\":\"Movie seven with updated title\",\n  \"director\":{\n    \"firstname\":\"Ash\",\n    \"lastname\":\"Singh\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "79c831ed-11ae-4dd2-ac32-c975223d7722",
+            "colId": "664cf499-52da-42b4-931e-a11f508388a3",
+            "containerId": "",
+            "name": "Delete movie by id",
+            "url": "localhost:8000/movies/2",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-12-19T16:35:53.139Z",
+            "modified": "2023-12-19T16:36:02.778Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
